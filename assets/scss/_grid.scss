@@ -1,0 +1,48 @@
+.container{
+
+    
+
+    @media screen and (min-width:$screenMedUp){
+        margin: 0 9.5rem;
+        
+    }
+
+    @media screen and (max-width:$screenMedDown){
+        margin: 0 2rem;
+    }
+
+}
+
+.container-mobile-none{
+
+    @media screen and (min-width:$screenMedUp){
+        margin: 0 9.5rem;
+        
+    }
+
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__column{
+        flex-direction: column;
+    }
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.text-center{
+    text-align: center;
+}

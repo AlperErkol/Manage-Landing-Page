@@ -1,0 +1,194 @@
+.footer{
+
+    background-color: $veryDarkBlue;
+    padding:2rem 0;
+
+    @media screen and (min-width:$screenMedUp){
+        height: 14rem;
+    }
+    
+    
+    .container{
+        height: 100%;
+    }
+    
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        
+        height: 100%;
+
+        @media screen and (max-width:$screenMedDown){
+
+            flex-direction: column-reverse;
+
+
+        }
+        
+        > div:nth-child(1){
+            flex:1;
+            
+            
+            display: flex;
+            
+            justify-content: space-between;
+
+            @media screen and (min-width:$screenMedUp){
+                flex-direction: column;
+            }
+
+            @media screen and (max-width:$screenMedDown){
+                flex-direction: column-reverse;
+            }
+
+            .footer__content_item_social{
+                
+                
+
+                @media screen and (max-width:$screenMedDown){
+                    
+                        margin-top: 1.5rem;
+                        display: flex;
+                        justify-content: space-between;
+                    
+                }
+
+                i{
+                    color:$veryLightGray;
+                    transition: all 200ms;
+                    cursor: pointer;
+                    &:not(:last-child){
+                        margin-right: 10px;
+                    }
+
+                    @media screen and (min-width:$screenMedUp){
+                        transform: scale(1.4);
+                    }
+                    @media screen and (max-width:$screenMedDown){
+                        transform:scale(2);
+                    }
+                    
+
+                }
+
+                i:hover{
+                    color :$brightRed;
+                }
+                
+            }
+
+            @media screen and (max-width:$screenMedDown){
+
+
+                a{
+                    
+                    text-align: center;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                }
+                small{
+                    text-align: center;
+                    color: $darkGrayishBlue;
+                }
+
+            }
+
+        }
+
+        > div:nth-child(2){
+
+
+            @media screen and (max-width:$screenMedDown){
+
+                margin: 1.5rem 0;
+
+
+
+            }
+            display: flex;
+            flex:2;
+            padding: 0 1rem;
+            padding-top: 1rem;
+
+            .footer__content_item_left{
+                flex:1;
+                display: flex;
+                
+
+                li:not(:last-child){
+
+                    margin-bottom: 10px;
+
+                }
+
+                a{
+                    
+                    color: $darkGrayishBlue;
+
+                    @media screen and (min-width:$screenMedUp){
+                        font-size: $fs-smd;
+                    }
+
+                    @media screen and (max-width:$screenMedDown){
+                        font-size: $fs-sm;
+                    }
+                }
+                
+
+            }
+
+            .footer__content_item_right{
+                flex:1;
+                display: flex;
+
+                li:not(:last-child){
+
+                    margin-bottom: 10px;
+
+                }
+                
+                a{
+                    font-size: $fs-smd;
+                    color: $darkGrayishBlue;
+
+                }
+                
+            }
+        }
+
+        > div:nth-child(3){
+            flex: 1;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .footer__content_item_left{
+
+                display: flex;
+                justify-content: flex-end;
+                input{
+                    padding-left: 15px;
+                    border:none;
+                    outline:none;
+                    border-radius: 40px;
+                    flex:1;
+                    font-family: $fontFamily;
+                }
+
+                
+            }
+
+            .footer__content_item_right{
+                small{
+                    float: right;
+                    color: $darkGrayishBlue;
+                }
+            }
+            
+            
+
+        }
+    }
+
+}

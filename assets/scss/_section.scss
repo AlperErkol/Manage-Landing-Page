@@ -1,0 +1,471 @@
+.illustration{
+    
+
+    &__content{
+        display: flex;
+        
+        @media screen and (min-width:$screenMedUp){
+            justify-content: space-between; 
+        }
+
+        @media screen and (max-width:$screenMedDown){
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        
+
+    
+        &_left{
+            
+            flex:1;
+            display: flex;
+            
+            h1{
+                color: $darkBlue;
+            }
+
+            p{
+                color: $darkGrayishBlue;
+            }
+
+            @media screen and (min-width:$screenMedUp){
+
+                
+                flex-direction: column;
+                justify-content: center;
+
+                h1{
+                    font-size: 3.2rem;
+                    line-height: 1;
+                    margin-bottom: 2rem;
+                    
+                }
+    
+                p{
+                    max-width: 60%;
+                    margin-bottom: 2rem;
+                }
+
+            }
+
+            @media screen and (max-width:$screenMedDown){
+                flex-direction: column;
+                align-items: center;
+
+                h1,p{
+                    text-align: center;
+
+                }
+
+                h1{
+                    
+                    font-size: 1.97rem;
+                    line-height: 1.35;
+                    margin-bottom: 0.625rem;
+                    
+                }
+                p{
+                    font-size: $fs-sm;
+                    line-height: 1.7;
+                    margin-bottom: 1.35rem;
+                }
+            }
+
+            
+        }
+
+        &_right{
+            
+            flex:1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                @media screen and (max-width:$screenMobileDown) {
+                    width: 100%;
+                    
+                }
+                @media screen and (min-width:$screenMobileUp) and (max-width:$screenMedDown){
+                    width: 60% !important;
+                    
+
+                }
+                @media screen and (min-width:$screenMedUp){
+                    width:80% !important;
+                }
+                
+                display: block;
+                
+            }
+            
+        }
+
+    }
+
+}
+
+.property{
+
+    &__content{
+
+        display: flex;
+        @media screen and (min-width:$screenMedUp){
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width:$screenMedDown){
+            flex-direction: column;
+
+        }
+
+        &_left{
+            
+            flex: 1;
+
+            h2{
+                color:$darkBlue;
+            }
+            p{
+                color: $darkGrayishBlue;
+
+            }
+
+            @media screen and (min-width:$screenMedUp){
+                margin-right: 3rem;
+                
+                h2{
+                    max-width: 100%;
+                    font-size: 2.5rem;
+                    line-height: 1.1;
+                    margin-bottom: 2rem;
+                    
+                }
+    
+                p{
+                    max-width: 65%;
+                    
+                }
+
+
+
+            }
+            @media screen and (max-width:$screenMedDown){
+                text-align: center;
+                margin-bottom: 2rem;
+                padding: 0 2rem;
+                h2{
+                    margin-bottom: 0.625rem;
+                }
+                p{
+                    font-size: $fs-sm;
+                    line-height: 2;
+                }
+
+            }
+
+            
+
+
+        }
+
+        &_right{
+
+            flex: 1;
+
+            
+
+            &_item{
+
+                @media screen and (min-width:$screenMedUp){
+
+                    p{
+                        margin-left: 5.375rem;
+                    }
+                
+                }
+        
+                @media screen and (max-width:$screenMedDown){
+                    p{
+                        font-size: $fs-sm;
+                        line-height: 2;
+                    }
+        
+                }
+
+                &:not(:last-child){
+                    margin-bottom: 1.2rem;
+                }
+                
+                &_header{
+                    display: flex;
+                    align-items: center;
+                    
+                    margin-bottom: 0.6rem;
+
+                    h3{
+                        color: $darkBlue;
+                    }
+
+                    
+                    
+                    span{
+                        
+                        text-align: center;
+                        padding: 0.3rem 1rem;
+                        border-radius: 1.5625rem;
+                        background-color: $brightRed;
+                        color:$veryLightGray;
+                        font-weight: 500;
+                        
+                    }
+
+                    @media screen and (min-width:$screenMedUp){
+                        span{
+
+                            width: 4.375rem;
+                            margin-right: 1rem;
+
+                        }
+                    }
+
+                    @media screen and (max-width:$screenMedDown){
+
+                        background-color: lighten($brightRed, 35);
+                        border-top-left-radius:1.5625rem;
+                        border-bottom-left-radius:1.5625rem;
+                        h3{
+                            font-size: 1rem;
+                            font-weight: 700;
+                        }
+
+                        span{
+                            margin-right: 0.5rem;
+                        }
+                        
+                            
+                    }
+                }
+
+                p{
+                    
+                    color: $darkGrayishBlue;
+                }
+
+                
+
+            }
+
+            
+        }
+
+    }
+
+
+
+}
+
+.testimonials{
+    
+    &__content{
+        
+        
+        h2{
+            color: $darkBlue;
+            
+        }
+
+        @media screen and (min-width:$screenMedUp){
+            h2{
+                font-size: 2.5rem;
+                margin-bottom: 4.5rem;
+            }
+        }
+
+        @media screen and (max-width:$screenMedDown){
+            h2{
+                margin-bottom: 3rem;
+            }
+        }
+
+        
+
+        &_slide{
+
+            @media screen and (max-width:$screenMedDown){
+                height: 23.125rem;
+                .swiper-pagination{
+                    
+                    bottom: 3px;
+                    
+                    
+                    &-bullet{
+                        background-color:white !important;
+                        border: 1px solid $brightRed !important;
+                    }
+                    &-bullet-active{
+                        background-color: $brightRed !important;
+                    }
+                }
+            }
+            
+            
+
+            &_item{
+
+                
+                
+                position: relative;
+                @media screen and (min-width:$screenMedUp){
+                    width: 40% !important;
+                    
+                    
+
+                    
+                }
+
+                @media screen and (max-width:$screenMedDown){
+                    padding: 0 1rem;
+                
+                }
+
+
+                .item-container{
+                    padding: 0 2rem 2rem 2rem;
+                    background-color: $veryLightGray;
+                    @media screen and (min-width:$screenMedUp){
+                        height: 15.625rem;
+                    }
+                    @media screen and (max-width:$screenMedDown){
+                        height: 18.75rem;
+                    }
+                    ;
+                }
+
+                
+
+                img{
+                    position: absolute;
+                    width: 5rem;
+                    top:0;
+                    left: 50%;
+                    z-index: 1;
+                    transform: translateX(-50%);
+                }
+
+                .item-body{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top:2.5rem;
+                    
+                    text-align: center;
+                    height: 100%;
+
+                    .item-name{
+                        font-weight: 700;
+                        color: $darkBlue;
+                        margin-top: 3rem;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    p{
+                        color: $darkGrayishBlue;
+                    }
+
+                    @media screen and (max-width:$screenMedDown){
+                        
+                        > p:nth-child(2){
+                            font-size: $fs-sm;
+                            line-height: 2;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+
+
+}
+
+.orange-section{
+
+    background-color: $brightRed;
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+
+
+    @media screen and (min-width:$screenMedUp){
+        height: 12.5rem;
+    }
+
+
+
+    .container{
+        width: 100%;
+    }
+
+    &__content{
+
+        display: flex;
+
+        @media screen and (min-width:$screenMedUp){
+            
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        @media screen and (max-width:$screenMedDown){
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        
+        
+
+
+        &_left{
+            flex: 1;
+            width: 100%;
+            
+            h2{
+
+                color: $veryLightGray;
+
+                @media screen and (min-width:$screenMedUp){
+
+                    font-size: 2.5rem;
+                    line-height: 1.2;
+            
+                }
+                
+                @media screen and (max-width:$screenMedDown){
+                    width: 100%;
+                    text-align: center;
+                    font-size: 2rem;
+                    line-height: 1.3;
+                    margin-bottom: 2rem;
+                    
+                }
+
+            }
+        }
+
+        &_right{
+            flex:1;
+            
+            
+            a{
+                float:right;
+            }
+            
+        }
+
+    }
+
+
+}

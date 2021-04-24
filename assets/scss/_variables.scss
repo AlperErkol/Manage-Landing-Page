@@ -1,0 +1,32 @@
+// Primary
+
+$brightRed : hsl(12, 88%, 59%);
+$darkBlue : hsl(228, 39%, 23%);
+
+// Neutral 
+
+$darkGrayishBlue : hsl(227, 12%, 61%);
+$veryDarkBlue : hsl(233, 12%, 13%);
+$veryPaleRed : hsl(13, 100%, 96%);
+$veryLightGray : hsl(0, 0%, 98%);
+
+
+// Font Styles
+
+$fs-sm : 0.875rem;
+$fs-smd : 0.9375rem;
+$fs-md : 1rem;
+
+$fontFamily : 'Be Vietnam', sans-serif;
+
+
+// Breakpoints
+
+$screenMedUp : 64rem; // 1024px 
+$screenMedDown : 63.9375rem; // 1023px
+
+$screenTabletUp : 48rem; // 768px
+$screenTabletDown : 47.9375rem; // 767px
+
+$screenMobileUp : 26.5625rem; // 425px
+$screenMobileDown : 26.5rem; // 424px

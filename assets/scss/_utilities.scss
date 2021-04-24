@@ -1,0 +1,35 @@
+
+// Hide mobile and tablet
+.hide-mobile{
+
+    @media screen and (max-width:$screenMedDown){
+        display: none;
+    }
+
+}
+
+.hide-desktop{
+
+    @media screen and (min-width:$screenMedUp){
+        display: none;
+    }
+
+}
+
+// Margin Class
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+.mb-2{
+    margin-bottom: 2rem;
+}
+.mb-3{
+    margin-bottom: 3rem;
+}
+.mb-4{
+    margin-bottom: 4rem;
+}
+.mb-5{
+    margin-bottom: 5rem;
+}
